@@ -377,4 +377,29 @@ What's your challenge must like:
         └── Main.rs
 ```
 
+### Score
+
+By default, when a student clicks the **Submit** buttton, the tests defined in `entry.rs` will be executed one after another. If a test fails, the following ones will not be run and the challenge will be considered failed. Otherwise it will be a success.
+
+You have the possibility to add a score to a multi language challenge. In that case, when a student submits his/her code, every tests will run even if one fails and a score will be computed based on the number of tests that have been successful. The challenge will be considered successful if the computed score is above a minimal one specified in the `challenge.yaml`.
+
+To enable this feature, simply add a `score` entry in the `challenge.yaml`, like in the following example :
+
+
+```yaml
+# challenge.yaml
+# ...
+coding:
+  templateDirectory: /opt/runner
+  successDirectory: success/
+  target: Main.js
+  editorMode: javascript
+  score:
+    min: 0 # Optional, default is 0
+    minToValidate: 90 # Mandatory
+    max: 100 # Optional, default is 100
+
+```
+
+
 
