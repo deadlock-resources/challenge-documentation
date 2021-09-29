@@ -25,6 +25,10 @@ nav:
   - Examples: challenge-types/code.md
   - Mode: mode/index.md
   - How does it work ?: how-does-it-work.md
+  - External repositories:
+    - Getting started: external-repositories-guides/external-repositories.md
+    - Administrator's guide: external-repositories-guides/admin-guide.md
+    - Maintainer's guide: external-repositories-guides/maintainer-guide.md
   - About:
     - Contributing: contributing.md
   - Getting help: help.md
