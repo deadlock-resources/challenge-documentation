@@ -23,6 +23,10 @@ nav:
   - Exemples: challenge-types/code.md
   - Mode: mode/index.md
   - Comment ça marche ?: how-does-it-work.md
+  - Répertoires externes:
+     - Pour Commencer: external-repositories-guides/external-repositories.md
+     - Guide de l'administrateur: external-repositories-guides/admin-guide.md
+     - Guide du mainteneur: external-repositories-guides/maintainer-guide.md
   - A propos:
     - Contribuer: contributing.md
   - Besoin d'aide: help.md
