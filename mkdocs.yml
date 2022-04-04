@@ -23,6 +23,7 @@ nav:
      - Comment ça marche ?: how-does-it-work.md
   - Types de missions:
      - VsCode: challenge-types/vscode.md
+     - Desktop: challenge-types/desktop.md
      - Multi-langage: challenge-types/metamorph.md
      - Multi-service: challenge-types/multi-service.md
      - Score: challenge-types/score.md
