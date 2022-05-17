@@ -12,6 +12,8 @@ mkdocs serve
 # How to deploy the updated docs
 Documentation will be automatically deployed on github-pages when master branch is updated
 
+`mkdocs gh-deploy`
+
 https://www.mkdocs.org/user-guide/deploying-your-docs/
 
 ## Resources
