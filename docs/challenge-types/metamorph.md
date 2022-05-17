@@ -25,7 +25,7 @@ Créer un nouveau dossier contenant un fichier `entry.rs`. Ce fichier définit :
 
 ```rust linenums="1"
 challenge! {{
-    "languages": ["java", "python", "c", "cpp", "go", "ruby", "rust", "javascript"]
+    "languages": ["java", "kotlin", "python", "c", "cpp", "go", "ruby", "rust", "javascript"]
 }}
 ```
 
@@ -36,7 +36,7 @@ Ecrivons ensemble le premier !
 
 ```rust linenums="1"
 challenge! {{
-    "languages": ["java", "python", "c", "cpp", "go", "ruby", "rust", "javascript"],
+    "languages": ["java", "kotlin", "python", "c", "cpp", "go", "ruby", "rust", "javascript"],
     "tests": [
         {
             input: 0,
@@ -65,6 +65,21 @@ Par défaut, pour chaque langage, le candidat dispose d'un template. Vous pouvez
         public static long fibonacci(long n) {
             return n;
         }
+    }
+    ```
+=== "Kotlin"
+    ```Kotlin linenums="1"
+    fun main(args: Array<String>) {
+        //args given, code submitted
+        if (args.isNotEmpty()) {
+            fibonacci(String.toInt(args[1]))
+        } else {
+            println("No arguments given!")
+        }
+    }
+    
+    fun fibonacci(n: Int) {
+        return n
     }
     ```
 === "Javascript"
@@ -217,7 +232,7 @@ L'utilisateur doit compléter la méthode `fibonacci` et le résultat sera affic
 Continuons avec plus de tests :  
 ```rust linenums="1" 
 challenge! {{
-    "languages": ["java", "python", "c", "cpp", "go", "ruby", "rust", "javascript"],
+    "languages": ["java", "kotlin", "python", "c", "cpp", "go", "ruby", "rust", "javascript"],
     "tests": [
         {
             input: 0,
@@ -285,10 +300,11 @@ print(fibo(sys.argv[1]))
 Ensuite la sortie *stdout* donnée avec la méthode *print* est comparée à celle résultant du programme du candidat.  
 Vous pouvez choisir un interprèteur parmi la liste de ceux proposé ci-après :   
 
-|           |              |      |      |
-| ----------|------------- |:----:|-----:|
-| java      | javascript   | ruby | c    |
-| rust      | python       | go   | cpp  |
+|        |            |     |
+|--------|------------|:---:|
+| java   | javascript | go  |
+| rust   | python     |  c  |
+| kotlin | ruby       | cpp |
 
 
 #### Répétition
@@ -370,6 +386,8 @@ Votre mission doit ressembler à cela :
     │   └── Main.go
     ├── java
     │   └── Main.java
+    ├── kotlin
+    │   └── Main.kt
     ├── javascript
     │   └── Main.js
     ├── python
