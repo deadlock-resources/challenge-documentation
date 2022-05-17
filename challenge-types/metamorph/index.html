@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.1">
+      <meta name="generator" content="mkdocs-1.2.4, mkdocs-material-8.1.1">
     
     
       
@@ -659,7 +659,7 @@ Le candidat est donc libre de choisir son langage préféré pour résoudre le p
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">challenge</span><span class="o">!</span><span class="w"> </span><span class="p">{{</span><span class="w"></span>
-<span class="w">    </span><span class="s">&quot;languages&quot;</span>: <span class="p">[</span><span class="s">&quot;java&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;python&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;c&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;cpp&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;go&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;ruby&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;rust&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;javascript&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="w">    </span><span class="s">&quot;languages&quot;</span>: <span class="p">[</span><span class="s">&quot;java&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;kotlin&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;python&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;c&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;cpp&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;go&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;ruby&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;rust&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;javascript&quot;</span><span class="p">]</span><span class="w"></span>
 <span class="p">}}</span><span class="w"></span>
 </code></pre></div>
 </td></tr></table>
@@ -675,7 +675,7 @@ Ecrivons ensemble le premier !</p>
 <span class="normal">7</span>
 <span class="normal">8</span>
 <span class="normal">9</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">challenge</span><span class="o">!</span><span class="w"> </span><span class="p">{{</span><span class="w"></span>
-<span class="w">    </span><span class="s">&quot;languages&quot;</span>: <span class="p">[</span><span class="s">&quot;java&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;python&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;c&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;cpp&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;go&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;ruby&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;rust&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;javascript&quot;</span><span class="p">],</span><span class="w"></span>
+<span class="w">    </span><span class="s">&quot;languages&quot;</span>: <span class="p">[</span><span class="s">&quot;java&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;kotlin&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;python&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;c&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;cpp&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;go&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;ruby&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;rust&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;javascript&quot;</span><span class="p">],</span><span class="w"></span>
 <span class="w">    </span><span class="s">&quot;tests&quot;</span>: <span class="p">[</span><span class="w"></span>
 <span class="w">        </span><span class="p">{</span><span class="w"></span>
 <span class="w">            </span><span class="n">input</span>: <span class="mi">0</span><span class="p">,</span><span class="w"></span>
@@ -687,7 +687,7 @@ Ecrivons ensemble le premier !</p>
 </td></tr></table>
 <p>Ce test va appeler le programme du candidat avec <code>0</code> comme <em>entrée</em> et s'attend à avoir <code>1</code> comme <em>sortie</em>.<br />
 Par défaut, pour chaque langage, le candidat dispose d'un template. Vous pouvez personnaliser le template pour chaque langage :</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:9"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><input id="__tabbed_1_6" name="__tabbed_1" type="radio" /><input id="__tabbed_1_7" name="__tabbed_1" type="radio" /><input id="__tabbed_1_8" name="__tabbed_1" type="radio" /><input id="__tabbed_1_9" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Java</label><label for="__tabbed_1_2">Javascript</label><label for="__tabbed_1_3">Python</label><label for="__tabbed_1_4">Go</label><label for="__tabbed_1_5">C</label><label for="__tabbed_1_6">Cpp</label><label for="__tabbed_1_7">Ocaml</label><label for="__tabbed_1_8">Rust</label><label for="__tabbed_1_9">Ruby</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:10"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><input id="__tabbed_1_6" name="__tabbed_1" type="radio" /><input id="__tabbed_1_7" name="__tabbed_1" type="radio" /><input id="__tabbed_1_8" name="__tabbed_1" type="radio" /><input id="__tabbed_1_9" name="__tabbed_1" type="radio" /><input id="__tabbed_1_10" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Java</label><label for="__tabbed_1_2">Kotlin</label><label for="__tabbed_1_3">Javascript</label><label for="__tabbed_1_4">Python</label><label for="__tabbed_1_5">Go</label><label for="__tabbed_1_6">C</label><label for="__tabbed_1_7">Cpp</label><label for="__tabbed_1_8">Ocaml</label><label for="__tabbed_1_9">Rust</label><label for="__tabbed_1_10">Ruby</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
@@ -718,6 +718,33 @@ Par défaut, pour chaque langage, le candidat dispose d'un template. Vous pouvez
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">long</span> <span class="nf">fibonacci</span><span class="p">(</span><span class="kt">long</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
         <span class="k">return</span> <span class="n">n</span><span class="p">;</span>
     <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+</div>
+<div class="tabbed-block">
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">fun</span> <span class="nf">main</span><span class="p">(</span><span class="n">args</span><span class="p">:</span> <span class="n">Array</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">&gt;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//args given, code submitted</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">args</span><span class="p">.</span><span class="na">isNotEmpty</span><span class="p">())</span> <span class="p">{</span>
+        <span class="n">fibonacci</span><span class="p">(</span><span class="kt">String</span><span class="p">.</span><span class="na">toInt</span><span class="p">(</span><span class="n">args</span><span class="o">[</span><span class="m">1</span><span class="o">]</span><span class="p">))</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="n">println</span><span class="p">(</span><span class="s">&quot;No arguments given!&quot;</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">fun</span> <span class="nf">fibonacci</span><span class="p">(</span><span class="n">n</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">n</span>
 <span class="p">}</span>
 </code></pre></div>
 </td></tr></table>
@@ -1017,7 +1044,7 @@ Continuons avec plus de tests :<br />
 <span class="normal">23</span>
 <span class="normal">24</span>
 <span class="normal">25</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">challenge</span><span class="o">!</span><span class="w"> </span><span class="p">{{</span><span class="w"></span>
-<span class="w">    </span><span class="s">&quot;languages&quot;</span>: <span class="p">[</span><span class="s">&quot;java&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;python&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;c&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;cpp&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;go&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;ruby&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;rust&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;javascript&quot;</span><span class="p">],</span><span class="w"></span>
+<span class="w">    </span><span class="s">&quot;languages&quot;</span>: <span class="p">[</span><span class="s">&quot;java&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;kotlin&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;python&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;c&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;cpp&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;go&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;ruby&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;rust&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;javascript&quot;</span><span class="p">],</span><span class="w"></span>
 <span class="w">    </span><span class="s">&quot;tests&quot;</span>: <span class="p">[</span><span class="w"></span>
 <span class="w">        </span><span class="p">{</span><span class="w"></span>
 <span class="w">            </span><span class="n">input</span>: <span class="mi">0</span><span class="p">,</span><span class="w"></span>
@@ -1105,21 +1132,23 @@ Vous pouvez choisir un interprèteur parmi la liste de ceux proposé ci-après :
 <th></th>
 <th></th>
 <th align="center"></th>
-<th align="right"></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>java</td>
 <td>javascript</td>
-<td align="center">ruby</td>
-<td align="right">c</td>
+<td align="center">go</td>
 </tr>
 <tr>
 <td>rust</td>
 <td>python</td>
-<td align="center">go</td>
-<td align="right">cpp</td>
+<td align="center">c</td>
+</tr>
+<tr>
+<td>kotlin</td>
+<td>ruby</td>
+<td align="center">cpp</td>
 </tr>
 </tbody>
 </table>
@@ -1189,6 +1218,8 @@ Par exemple, si le candidat décide d'utiliser l'interpréteur <em>Rust</em>, to
     │   └── Main.go
     ├── java
     │   └── Main.java
+    ├── kotlin
+    │   └── Main.kt
     ├── javascript
     │   └── Main.js
     ├── python
