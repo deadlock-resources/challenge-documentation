@@ -19,12 +19,12 @@ Votre exercice doit suivre l'arborescence suivante :
 ├── scripts
 │   ├── run.py
 │   └── test.py
-├── src
+├── workdir
 └── thumbnail.png
 
 ```
 
-* **src** le code du challenge
+* **workdir** le code du challenge
 * **scripts** les scrips que vous souhaitez rendre accessible  
 * **docs** contient le briefing, les instructions utilisateurs. Le briefing sera ouvert au démarrage de l'IDE. 
 * **thumbnail.png** image du challenge 
@@ -32,13 +32,12 @@ Votre exercice doit suivre l'arborescence suivante :
 
 ```Dockerfile
 FROM registry.takima.io/deadlock-public/deadlock-desktop/desktop:latest
-# Here, you can install the necessary dependencies for the exercise
+# Ici, vous pouvez installer les dépendances nécessaires à l'exercice
 
+# Ajoutez ici les codes sources de votre challenge
+COPY ./workdir /workdir
 
-# Insert challenge source code in the mage
-COPY ./src /src
-
-# Insert the challenge briefing
+# Ajoutez le contenu accessible à l'utilisateur dans l'IDE
 COPY docs /home/deadlock/docs
 ```
 * **challenge.yml** est le fichier descripteur
@@ -55,8 +54,8 @@ xp: # points d'expérience, vous pouvez ajouter les labels que vous voulez
   java: 1
 desktop:
   scripts: # L'étudiant pourra accéder aux scripts listés ici depuis l'extension deadlock 
-    - name: launch
-      command: python3 ./scripts/run.py
+    - name: launch # Nom de commande
+      command: python3 ./scripts/run.py # Commande à exécuter
     - name: test
       command: python3 ./scripts/test.py
 
@@ -68,3 +67,17 @@ desktop:
 ![Something Else](image:dir/else.png)
 ```
 Vous devez préfixer le path de votre image avec **image:**
+
+## Tester l'exercice
+
+### Prérequis
+
+* Installer [VSCode](https://code.visualstudio.com/) / [VSCodium](https://vscodium.com/)
+* Installer l'extention : [Remote - Container](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+
+### Lancer avec Deadlock-cli
+
+Exécuter la commande suivante dans le dossier de l'exercice:
+```shell
+dcli run .
+```
